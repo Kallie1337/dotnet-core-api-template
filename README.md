@@ -1,9 +1,9 @@
 # crushtown-heroes-API
 
-    - [x] C# (dotnet core)
-    - [x] Entity Framework code first / SQLServer Database
-    - [x] Identity Framework / Authentication, Authorization
-    - [x] Fluent Validation
-    - [x] AutoMapper / DTOs
-    - [x] Seeder
-    - [x] JWT token
+- [x] asp dotnet core web api REST
+- [x] Entity Framework core code first / SQLServer Database
+- [x] Identity Framework core / Authentication, Authorization
+- [x] Fluent Validation
+- [x] AutoMapper / DTOs
+- [x] Seeder
+- [x] JWT token
