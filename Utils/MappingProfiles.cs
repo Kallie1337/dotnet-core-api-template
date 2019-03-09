@@ -1,5 +1,7 @@
 using System;
 using AutoMapper;
+using crushtown_heroes_API.Models.DTOs;
+using crushtown_heroes_API.Models.Entities;
 
 namespace crushtown_heroes_API.Utils
 {
@@ -7,7 +9,7 @@ namespace crushtown_heroes_API.Utils
     {
         public MappingProfiles()
         {
-            // CreateMap<Object, ObjectDTO>().ReverseMap();
+            //CreateMap<ApplicationUser, LoginDto>().ReverseMap();
         }
     }
 }

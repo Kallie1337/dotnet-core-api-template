@@ -1,5 +1,5 @@
 using System;
-using crushtown_heroes_API.Models;
+using crushtown_heroes_API.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

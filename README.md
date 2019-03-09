@@ -5,5 +5,5 @@
     - [x] Identity Framework / Authentication, Authorization
     - [x] Fluent Validation
     - [x] AutoMapper / DTOs
-    - [ ] Seeder
-    - [ ] JWT token
+    - [x] Seeder
+    - [x] JWT token
