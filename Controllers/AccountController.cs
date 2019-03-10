@@ -9,6 +9,7 @@ using AutoMapper;
 using crushtown_heroes_API.Models.DTOs;
 using crushtown_heroes_API.Models.Entities;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace crushtown_heroes_API.Controllers
 {
+    [EnableCors("CorsPolicy")]
     [AllowAnonymous]
     [Route("api/v1/account")]
     [ApiController]
@@ -30,6 +32,13 @@ namespace crushtown_heroes_API.Controllers
             this.signInManager = signInManager;
             this.userManager = userManager;
             this.configuration = configuration;
+        }
+
+        [Route("test")]
+        [HttpGet]
+        public async Task<object> Test()
+        {
+            return Ok(new LoginDto { Email= "te", Password = "rze"});
         }
 
         [Route("login")]

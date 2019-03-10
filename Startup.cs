@@ -61,6 +61,15 @@ namespace crushtown_heroes_API
                 };
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials() );
+            });
+
             services.AddMvc()
                 .AddJsonOptions(x =>
                 {
@@ -74,8 +83,11 @@ namespace crushtown_heroes_API
         {
             app.UseAuthentication();
             
-            app.UseHsts();
-            app.UseHttpsRedirection();
+            //app.UseHsts();
+            //app.UseHttpsRedirection();
+
+            app.UseCors("CorsPolicy");
+
             app.UseMvc();
 
             //applicationDbContext.Database.EnsureDeleted();
