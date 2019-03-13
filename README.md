@@ -7,4 +7,4 @@
     - [x] AutoMapper / DTOs
     - [x] Seeder
     - [x] JWT token
-    - [x] Cors
+    - [x] Cors 
