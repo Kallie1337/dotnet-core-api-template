@@ -6,5 +6,5 @@
     - [x] Fluent Validation
     - [x] AutoMapper / DTOs
     - [x] Seeder
-    - [x] JWT token
+    - [x] JWT token 
     - [x] Cors 
